@@ -13,6 +13,8 @@ public class aula2 {
         float deposito = sc.nextFloat();
         System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ");
 
+
+
         Conta c1 = new Conta();
         c1.abrirConta(tipo);
         c1.setNumConta(numConta);
@@ -20,6 +22,12 @@ public class aula2 {
         c1.depositar(deposito);
         c1.verificar();
 
+        String sacaroun = sc.next();
+        if (sacaroun == "SIM") {
+            float sacar = sc.nextFloat();
+            c1.sacar(sacar);
+        }     
+        c1.verificar();
 
 }
 }
