@@ -60,9 +60,7 @@ public class Conta {
             this.setSaldo(50);
         } else if(getTipo() == "poupança") {
             this.setSaldo(150);
-        } else {
-            System.out.println("Escolha um tipo de conta para continuar, 'CORRENTE' OU 'POUPANÇA'");
-        }
+        } 
         this.setStatus(true);
         System.out.println("Conta aberta com sucesso");
     }

@@ -1,22 +1,25 @@
 package aula5ex;
+import java.util.Scanner;
 public class aula2 {
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Digite o tipo da conta: ");
+        String tipo = sc.next();
+        System.out.println("Digite o Numero da conta: ");
+        int numConta = sc.nextInt();
+        System.out.println("Digite o Nome do Dono da conta: ");
+        String nomeDono = sc.next();
+        System.out.println("Digite o Deposito da conta: ");
+        float deposito = sc.nextFloat();
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-= ");
+
         Conta c1 = new Conta();
-        c1.abrirConta("corrente");
-        c1.setNumConta(111);
-        c1.setDono("Anderson");
-        c1.depositar(20);
-        c1.pagarMensal();
+        c1.abrirConta(tipo);
+        c1.setNumConta(numConta);
+        c1.setDono(nomeDono);
+        c1.depositar(deposito);
         c1.verificar();
 
-        Conta c2 = new Conta();
-        c2.abrirConta("poupança");
-        c2.setNumConta(222);
-        c2.setDono("julia");
-        c2.sacar(140);
-        c2.pagarMensal();
-        c2.verificar();
-        c2.fecharConta();
-        
+
 }
 }
