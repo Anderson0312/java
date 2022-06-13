@@ -24,7 +24,6 @@ public class aula2 {
         c1.depositar(deposito);
         c1.verificar();
 
-
         while (true) {
         System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=- ");
         System.out.println("Deseja fazer um saque ([1] para SIM)/([2] para NAO) ");
@@ -43,7 +42,6 @@ public class aula2 {
             } else {
                 System.out.println("Só é aceito ([1]SIM) ou ([2]NAO)");
             }
-        }
-        
+        }      
 }
 }
