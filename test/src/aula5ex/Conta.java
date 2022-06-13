@@ -94,21 +94,21 @@ public class Conta {
             System.out.println("Sua conta não possui Valor suficiente ou não existe!");
         }
     }
-    public void pagarMensal() {
-        int v = 0;
-        if(this.getTipo() == "corrente") {
-            v = 12;
-        } else if(this.getTipo() == "poupança") {
-            v = 20;
-        }
-        if (this.isStatus() == true) {
-            this.setSaldo(this.getSaldo() - v);
-            System.out.println("Mensalidade paga com sucesso por " + this.getDono());
+    // public void pagarMensal() {
+    //     int v = 0;
+    //     if(this.getTipo() == "corrente") {
+    //         v = 12;
+    //     } else if(this.getTipo() == "poupança") {
+    //         v = 20;
+    //     }
+    //     if (this.isStatus() == true) {
+    //         this.setSaldo(this.getSaldo() - v);
+    //         System.out.println("Mensalidade paga com sucesso por " + this.getDono());
 
-        } else {
-            System.out.println("Conta invalida");
-        }
-    }
+    //     } else {
+    //         System.out.println("Conta invalida");
+    //     }
+    // }
 
     public void verificar() {
         System.out.println("-----------------------------------");
