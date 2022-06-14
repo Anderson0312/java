@@ -75,9 +75,9 @@ public class Conta {
         }
     }
     public void depositar(float depositar){
-        
         if(this.isStatus() == true){
             this.setSaldo(this.getSaldo() + depositar);
+            System.out.println("Seu deposito foi realizado na conta de " + this.getDono());
         } else {
             System.out.println("Não é possivel depositar em uma conta que não existe.");
         }
@@ -85,7 +85,7 @@ public class Conta {
     public void sacar(float sacar){
         if(this.isStatus()) {
             if(this.getSaldo() >= sacar) {
-                this.setSaldo(this.getSaldo() - sacar);
+                this.setSaldo((this.getSaldo() - sacar) - 5);
                 System.out.println("Saque realizado na conta de " + this.getDono());
             } else {
                 System.out.println("Saldo insuficiente para saque!");

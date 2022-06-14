@@ -34,10 +34,28 @@ public class aula2 {
                 float sacar = sc.nextFloat();
                 c1.sacar(sacar);
                 c1.verificar();
-                sc.close();
                 break;
             } else if(sacaroun == 2) {
                 System.out.println("Ok você não deseja sacar!");
+                break;
+            } else {
+                System.out.println("Só é aceito ([1]SIM) ou ([2]NAO)");
+            }
+        }      
+
+        while (true) {
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=-=- ");
+        System.out.println("Deseja fazer um Deposito ([1] para SIM)/([2] para NAO) ");
+        System.out.println("-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-==-=-=-=-=-=-=- ");
+        int depositaroun = sc.nextInt();
+            if (depositaroun == 1) {
+                System.out.println("Digite o Valor que deseja Deposito: Seu Saldo é [" + c1.getSaldo()+"]");
+                float depositar = sc.nextFloat();
+                c1.depositar(depositar);
+                c1.verificar();
+                break;
+            } else if(depositaroun == 2) {
+                System.out.println("Ok você não deseja Deposito!");
                 break;
             } else {
                 System.out.println("Só é aceito ([1]SIM) ou ([2]NAO)");
