@@ -10,17 +10,23 @@ public class ex2 {
         int n = sc.nextInt();
         System.out.println("----------------------------------");
 
-        double[] Produto = new double[n];
-        for (int i=0; i<Produto.length; i++) {
-            System.out.println("Primeiro PRODUTO:");
-            // Produto[i] = sc.next();
-            Produto[i] = sc.nextDouble();
-            Produto[i] = sc.next();
+        double[][] Produto = new double[n][2];
+
+        for (int i=0; i<n; i++) {
+            System.out.println("Primeiro PRODUTO:" + (i+1));
+            for (int j=0; j<2; j++) {
+
+                Produto[i][1] = sc.nextInt();  
+				 
+                // System.out.print(Produto[i][i] + " ");
+			}
+            System.out.println("\n");    
+            
         }
 
         double sum = 0.0;
         for (int i=0; i<n; i++) {
-            sum += Produto[i];
+            sum += Produto[i][2];
         }
 
         double media = sum / Produto.length;
