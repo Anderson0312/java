@@ -1,4 +1,4 @@
-package aula14ex;
+package listex;
 
 import java.util.Scanner;
 
@@ -12,17 +12,11 @@ public class ex1 {
         System.out.println("----------------------------------");
 
         double[] altura = new double[n];
-
-        for (int i=0; i<n; i++) {
-            
-            altura[i] = sc.nextDouble();   
-        }
-
         double sum = 0.0;
-
         for (int i=0; i<n; i++) {
+            System.out.println("Defina a altura da " +(i +1 )+ " pessoa: ");
+            altura[i] = sc.nextDouble();   
             sum += altura[i];
-            
         }
 
         System.out.println("----------------------------------");

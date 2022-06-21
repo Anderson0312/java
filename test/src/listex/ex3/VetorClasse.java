@@ -1,7 +1,6 @@
-package aula14ex.ex3;
+package listex.ex3;
 
 import java.util.Scanner;
-
 
 public class VetorClasse {
     public static void main(String[] args) {
@@ -11,8 +10,7 @@ public class VetorClasse {
             int n = sc.nextInt();
 
             for(int i = 1; i <= n; i++)
-            {
-                
+            {    
                 System.out.println("Aluguel :" + i);
                 System.out.println("Nome: ");
                 String nome = sc.next();
@@ -28,10 +26,10 @@ public class VetorClasse {
             {
                 if (vect[i] != null)
                 {
-                    System.out.println(i + ": " + vect[i]);
+                    System.out.println(i + ": " + vect[i].Nome + " , " + vect[i].Email);
                 }
             }
-
+            sc.close();
 
         }
     }

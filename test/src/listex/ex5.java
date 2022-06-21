@@ -1,4 +1,4 @@
-package aula14ex;
+package listex;
 import java.util.Random;
 import java.util.Scanner;
 
