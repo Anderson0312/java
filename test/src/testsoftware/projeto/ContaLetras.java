@@ -1,7 +1,7 @@
-package testsoftware.test1;
+package testsoftware.projeto;
 
 public class ContaLetras {
-    public void contadorp (String palavra) 
+    public int contadorp (String palavra) 
     {
         int count = 0;
         for (int i = 0; i <palavra.length(); i++) 
