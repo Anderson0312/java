@@ -17,11 +17,10 @@ public class Calculadora {
 
     public int divide(int n, int b)
      {   
-        if (b == 0) {
+        if (b == 0) 
             return 0;
-        }
         else
-        return n/b;
+            return n/b;
     }
 
     public int multiplicação(int n, int b) {

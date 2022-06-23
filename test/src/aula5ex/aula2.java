@@ -61,5 +61,6 @@ public class aula2 {
                 System.out.println("Só é aceito ([1]SIM) ou ([2]NAO)");
             }
         }      
+        sc.close();
 }
 }

@@ -29,6 +29,7 @@ public class ex2 {
 
         double media = sum / n;
         System.out.printf("A média de produtos "+ media);
+        sc.close();
     }
-
+    
 }
