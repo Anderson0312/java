@@ -64,6 +64,12 @@ public class TestCalculadora {
         int saida = test.soma(2, 0);
         assertEquals(2,saida);
     }
+    @Test 
+    public void soma6() {
+        Calculadora test= new Calculadora();
+        int saida = test.soma(0, 2);
+        assertEquals(2,saida);
+    }
 
     // TESTES DE SUBTRAÇÃO
     @Test 
@@ -98,6 +104,20 @@ public class TestCalculadora {
         Calculadora test= new Calculadora();
         int saida = test.subtração(-1, 0);
         assertEquals(-1,saida);
+    }
+
+    @Test 
+    public void subtração6() {
+        Calculadora test= new Calculadora();
+        int saida = test.subtração(2, 0);
+        assertEquals(2,saida);
+    }
+
+    @Test 
+    public void subtração7() {
+        Calculadora test= new Calculadora();
+        int saida = test.subtração(0, 2);
+        assertEquals(2,saida);
     }
 
     //TESTES DE DIVISÃO
@@ -178,6 +198,13 @@ public class TestCalculadora {
     public void multiplicação6() {
         Calculadora test= new Calculadora();
         int saida = test.multiplicação(0, 0);
+        assertEquals(0,saida);
+    }
+
+    @Test 
+    public void multiplicação7() {
+        Calculadora test= new Calculadora();
+        int saida = test.multiplicação(2, 0);
         assertEquals(0,saida);
     }
 
