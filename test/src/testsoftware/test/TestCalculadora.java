@@ -7,7 +7,7 @@ import testsoftware.projeto.Calculadora;
 
 public class TestCalculadora {
 
-    //TESTES DE NUMERO AO QUADRADOR
+    // ----------------------TESTES DE NUMERO AO QUADRADOR----------------------------
     @Test
     public void quadrado1() {
         Calculadora test= new Calculadora();
@@ -30,7 +30,7 @@ public class TestCalculadora {
     }
 
     
-    // TESTES DE SOMA
+    //---------------------------- TESTES DE SOMA ----------------------------
     @Test 
     public void soma1() {
         Calculadora test= new Calculadora();
@@ -54,7 +54,7 @@ public class TestCalculadora {
     @Test 
     public void soma4() {
         Calculadora test= new Calculadora();
-        int saida = test.soma(-1, +2);
+        int saida = test.soma(-1, 2);
         assertEquals(1,saida);
     }
 
@@ -71,7 +71,7 @@ public class TestCalculadora {
         assertEquals(2,saida);
     }
 
-    // TESTES DE SUBTRAÇÃO
+    //---------------------------- TESTES DE SUBTRAÇÃO ----------------------------
     @Test 
     public void subtração1() {
         Calculadora test= new Calculadora();
@@ -117,10 +117,10 @@ public class TestCalculadora {
     public void subtração7() {
         Calculadora test= new Calculadora();
         int saida = test.subtração(0, 2);
-        assertEquals(2,saida);
+        assertEquals(-2,saida);
     }
 
-    //TESTES DE DIVISÃO
+    //---------------------------- TESTES DE DIVISÃO ----------------------------
     @Test 
     public void divide1() {
         Calculadora test= new Calculadora();
@@ -156,9 +156,16 @@ public class TestCalculadora {
         assertEquals(0,saida);
     }
 
+    @Test 
+    public void divide6() {
+        Calculadora test= new Calculadora();
+        int saida = test.divide(0, 0);
+        assertEquals(0,saida);
+    }
 
 
-    //TESTES DE MULTIPLICAÇÃO
+
+    // ---------------------------- TESTES DE MULTIPLICAÇÃO ----------------------------
     @Test 
     public void multiplicação1() {
         Calculadora test= new Calculadora();
@@ -208,4 +215,39 @@ public class TestCalculadora {
         assertEquals(0,saida);
     }
 
+
+    //----------------------------  TEST COM NUMEROS QUEBRADOS  ----------------------------
+    @Test
+    public void quadradoQuebrado() {
+        Calculadora test= new Calculadora();
+        int saida = test.quadrado(2.1);
+        assertEquals(4.41,saida);
+    } 
+
+    @Test 
+    public void somaQuebrado() {
+        Calculadora test= new Calculadora();
+        int saida = test.soma(1, 2.2);
+        assertEquals(3.2,saida);
+    }
+
+    @Test 
+    public void subtraçãoQuebrado() {
+        Calculadora test= new Calculadora();
+        int saida = test.subtração(2, 1.2);
+        assertEquals(0.8,saida);
+    }
+
+    @Test 
+    public void divideQuebrado() {
+        Calculadora test= new Calculadora();
+        int saida = test.divide(6.2, 2);
+        assertEquals(3.1,saida);
+    }
+
+    public void multiplicaçãoQuebrado() {
+        Calculadora test= new Calculadora();
+        int saida = test.multiplicação(2, 2.2);
+        assertEquals(4.4,saida);
+    }
 }
