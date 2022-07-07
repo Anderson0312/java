@@ -9,13 +9,6 @@ public class TestTemperatura {
     
     // --------------Teste de Celsius Para Firhrenhit ---------------------
     @Test
-    public void CelsiusParaFirhrenhit() {
-        Temperatura test= new Temperatura();
-        double saida = test.Celsius(15);
-        assertEquals(59,59,saida);
-    } 
-
-    @Test
     public void CelsiusParaFirhrenhit1() {
         Temperatura test= new Temperatura();
         double saida = test.Celsius(20);
@@ -45,12 +38,6 @@ public class TestTemperatura {
 
 
     // --------------Teste de Firhrenhit Para Celsius---------------------
-    @Test
-    public void FirhrenhitParaCelsius() {
-        Temperatura test= new Temperatura();
-        double saida = test.Farhrenheit(59);
-        assertEquals(15,15,saida);
-    } 
 
     @Test
     public void FirhrenhitParaCelsius1() {
